@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content = width = device-width, initial-scale =1.0"/>    
+    <title>客户画像</title>
+  //  <link rel = "stylesheet" href="css/index.css" />
+     <link rel = "stylesheet" href="../index.css" />
+  </head>
+  <body>
+    <!-- 头部的盒子 -->
+    <header>
+    <h1>客户画像</h1>
+    <div class="showTime></div>
+    <script>
+       var t = null;
+       t = setTimeout(time,1000);
+       function time() {
+         clearTimeout(t);
+         dt = new Date();
+         var y = dt.getFullYear();
+         var mt = dt.getMonth()+1;
+         var day = dt.getDate();
+         var h = dt.getHours();
+         var m = dt.getMinutes();
+         var s = dt.getSeconds();
+       document.querySelector(".showTime").innerHTML = "当前时间：”+ y + "年” +mt+"月” + day + "-" + h+"时”+m+"分”+s+ "秒”；
+t = setTimeout (time, 1000); 
+}
+  </script>
+  </header>
+  <!-- 页面主体部分 -->
+    //<script src="https:/echarts.js"></script>
+    <section class="mainbox"></section>
+    <script src="js/flexible.js"></script>
+   </body>
+</html>
