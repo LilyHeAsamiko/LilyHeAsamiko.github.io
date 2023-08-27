@@ -38,7 +38,7 @@ header .showTime {
   right: 0.375rem;
   line-height: 0.9375rem;
   font-size: 0.25rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
 }
 .mainbox {
   min-width: 1024px;
@@ -47,7 +47,7 @@ header .showTime {
   display: flex;
 }
 .mainbox .column {
-  flex: 4;
+  flex: 3;
 }
 .mainbox .column:nth-child(2) {
   flex: 5;
@@ -58,7 +58,7 @@ header .showTime {
   position: relative;
   height: 3.875rem;
   border: 1px solid rgba(25, 186, 139, 0.17);
-  background: rgba(255, 255, 255, 0.04) url(../images/line.png);
+  background: rgba(255, 255, 255, 0.04) url(../images/line\(1\).png);
   padding: 0 0.1875rem 0.5rem;
   margin-bottom: 0.1875rem;
 }
@@ -122,7 +122,7 @@ header .showTime {
   text-decoration: underline;
 }
 .panel .chart {
-  height: 2.5rem;
+  height: 3rem;
 }
 .no {
   background: rgba(101, 132, 226, 0.1);
@@ -185,7 +185,7 @@ header .showTime {
   line-height: 0.5rem;
   text-align: center;
   font-size: 0.225rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
   padding-top: 0.125rem;
 }
 .map {
