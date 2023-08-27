@@ -122,7 +122,7 @@ header .showTime {
   text-decoration: underline;
 }
 .panel .chart {
-  height: 3rem;
+  height: 2.5rem;
 }
 .no {
   background: rgba(101, 132, 226, 0.1);
@@ -185,7 +185,7 @@ header .showTime {
   line-height: 0.5rem;
   text-align: center;
   font-size: 0.225rem;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.8);
   padding-top: 0.125rem;
 }
 .map {
