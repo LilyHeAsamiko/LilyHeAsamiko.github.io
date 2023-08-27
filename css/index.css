@@ -47,7 +47,7 @@ header .showTime {
   display: flex;
 }
 .mainbox .column {
-  flex: 3;
+  flex: 4;
 }
 .mainbox .column:nth-child(2) {
   flex: 5;
