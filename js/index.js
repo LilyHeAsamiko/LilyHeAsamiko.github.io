@@ -295,7 +295,7 @@
 (function() {
   // 基于准备好的dom，初始化echarts实例
   var myChart = echarts.init(document.querySelector(".scatter .chart"));
-
+  
   option = {
             xAxis:{
                 type:'value',
@@ -307,14 +307,17 @@
             },
             series:[{
                 type:'scatter',
-                data:xdata,  // 二维数组 [[身高1，体重1],[身高2，体重2], ...]
-            }]
-        }
-        myEchart.setOption(option)
-    </script>  
-</body>
-</html>
-
+                data:[[4,5,1,1],[4,4,0,1],[4,5,1,1],[4,4,0,1]
+        ]
+      }
+    ]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+  window.addEventListener("resize", function() {
+    myChart.resize();
+  });
+})();
 
 // 学习进度柱状图模块
 (function() {
