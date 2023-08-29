@@ -775,7 +775,7 @@
   });
 })();
 
-//散点图 年收入/行业 客户与否
+//散点图 熟悉程度/可达度 客户与否 4,4，2,date
 (function() {
   // 基于准备好的dom，初始化echarts实例
   var myChart = echarts.init(document.querySelector(".scatter .chart"));
@@ -792,7 +792,7 @@
             series:[{
                 type:'scatter',
                 color: data[:][2] == 1?'red':'green',
-                data:[[4,5,1,1],[4,4,0,1],[4,5,1,1],[4,4,0,1]
+                data:[[4,3,1,1],[4,4,0,1],[4,4,1,1],[4,4,0,1]
         ]
       }
     ]
