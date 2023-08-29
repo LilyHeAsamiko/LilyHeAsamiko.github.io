@@ -290,6 +290,32 @@
     myChart.resize();
   });
 })();
+
+//散点图 年收入/行业 客户与否
+(function() {
+  // 基于准备好的dom，初始化echarts实例
+  var myChart = echarts.init(document.querySelector(".scatter .chart"));
+
+  option = {
+            xAxis:{
+                type:'value',
+                scale: true
+            },
+            yAxis:{
+                type:'value',
+                scale: true
+            },
+            series:[{
+                type:'scatter',
+                data:xdata,  // 二维数组 [[身高1，体重1],[身高2，体重2], ...]
+            }]
+        }
+        myEchart.setOption(option)
+    </script>  
+</body>
+</html>
+
+
 // 学习进度柱状图模块
 (function() {
   // 基于准备好的dom，初始化echarts实例
