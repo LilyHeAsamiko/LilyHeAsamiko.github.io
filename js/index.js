@@ -1,4 +1,4 @@
-// 柱状图1模块
+ // 柱状图1模块
 (function() {
   // 实例化对象
   var myChart = echarts.init(document.querySelector(".bar .chart"));
@@ -67,10 +67,10 @@
     ],
     series: [
       {
-        name: "直接访问",
+        name: "签约成交",
         type: "bar",
         barWidth: "35%",
-        data: [1, 30, 30, 90],
+        data: [0, 48, 19, 4],
         itemStyle: {
           barBorderRadius: 5
         }
@@ -86,8 +86,8 @@
 
   // 数据变化，每天更新
   var dataAll = [
-    { year: "本月", data: [200, 300, 300, 900] },
-    { year: "上月", data: [300, 400, 350, 800] }
+    { year: "本月", data: [0, 48, 19, 4] },
+    { year: "上月", data: [3, 40, 35, 8] }
   ];
 
   $(".bar h2 ").on("click", "a", function() {
@@ -99,13 +99,13 @@
 // 折线图定制
 (function() {
   // 基于准备好的dom，初始化echarts实例
-  var myChart = echarts.init(document.querySelector(".line .chart"));
+  var myChart = echarts.init(document.querySelector(".line.chart"));
 
   // (1)准备数据
   var data = {
     month: [
-      [24, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 120, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 40, 101, 134, 90, 230, 210, 230, 120, 230],
-      [40, 64, 191, 324, 290, 330, 310, 213, 180, 200, 180, 79, 24, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 120, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 40]
+      [2, 4, 10, 13, 9, 23, 21, 23, 12, 23, 210, 120, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 40, 101, 134, 90, 230, 210, 230, 120, 230],
+      [40, 64, 91, 32, 90, 33, 31, 21, 180, 200, 180, 79, 24, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 120, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 40]
     ]
   };
 
@@ -249,7 +249,7 @@
       top: "90%",
       itemWidth: 10,
       itemHeight: 10,
-      data: ["0岁以下", "0-20岁", "21-30岁", "40-49岁", "50岁以上"],
+      data: ["5岁以下", "6-10岁", "11-20",  "21岁以上"],
       textStyle: {
         color: "rgba(255,255,255,.5)",
         fontSize: "12"
@@ -275,11 +275,10 @@
         label: { show: false },
         labelLine: { show: false },
         data: [
-          { value: 1, name: "0岁以下" },
-          { value: 4, name: "20-29岁" },
-          { value: 2, name: "30-39岁" },
-          { value: 2, name: "40-49岁" },
-          { value: 1, name: "50岁以上" }
+          { value: 1, name: "5岁以下" },
+          { value: 4, name: "6-10岁" },
+          { value: 2, name: "11-20" },
+          { value: 2, name: "21岁以上" }
         ]
       }
     ]
@@ -296,10 +295,10 @@
   // 基于准备好的dom，初始化echarts实例
   var myChart = echarts.init(document.querySelector(".bar1 .chart"));
 
-  var data = [70, 34, 60, 78, 69];
+  var data = [70, 34, 60, 78];
   var titlename = ["HTML5", "CSS3", "javascript", "VUE", "NODE"];
-  var valdata = [702, 350, 610, 793, 664];
-  var myColor = ["#1089E7", "#F57474", "#56D0E3", "#F8B448", "#8B78F6"];
+  var valdata = [702, 350, 610, 793];
+  var myColor = ["#1089E7", "#F57474", "#56D0E3", "#F8B448"];
   option = {
     //图标位置
     grid: {
@@ -382,7 +381,7 @@
         type: "bar",
         yAxisIndex: 1,
         barCategoryGap: 50,
-        data: [100, 100, 100, 100, 100],
+        data: [100, 100, 100, 100],
         barWidth: 15,
         itemStyle: {
           normal: {
@@ -476,7 +475,8 @@
           "27",
           "28",
           "29",
-          "30"
+          "30",
+          "31"
         ]
       },
       {
@@ -583,7 +583,8 @@
           20,
           40,
           20,
-          40
+          40, 
+          50
         ]
       },
       {
