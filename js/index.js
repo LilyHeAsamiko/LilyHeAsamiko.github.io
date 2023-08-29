@@ -307,6 +307,7 @@
             },
             series:[{
                 type:'scatter',
+                color: data[:][2] == 1?'red':'green',
                 data:[[4,5,1,1],[4,4,0,1],[4,5,1,1],[4,4,0,1]
         ]
       }
