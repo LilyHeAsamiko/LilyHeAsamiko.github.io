@@ -774,3 +774,32 @@
     myChart.resize();
   });
 })();
+
+//散点图 年收入/行业 客户与否
+(function() {
+  // 基于准备好的dom，初始化echarts实例
+  var myChart = echarts.init(document.querySelector(".scatter .chart"));
+  
+  option = {
+            xAxis:{
+                type:'value',
+                scale: true
+            },
+            yAxis:{
+                type:'value',
+                scale: true
+            },
+            series:[{
+                type:'scatter',
+                color: data[:][2] == 1?'red':'green',
+                data:[[4,5,1,1],[4,4,0,1],[4,5,1,1],[4,4,0,1]
+        ]
+      }
+    ]
+  };
+  // 使用刚指定的配置项和数据显示图表。
+  myChart.setOption(option);
+  window.addEventListener("resize", function() {
+    myChart.resize();
+  });
+})();
