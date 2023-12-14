@@ -14,4 +14,5 @@ def query():
         return render_template('query.html', dict_return = dict_return)
 
 if __name__ == '__main__':
-   app.run(debug = True)
+#   app.run(debug = True)
+    app.run(host='0.0.0.0', port=9095,threaded=True)
